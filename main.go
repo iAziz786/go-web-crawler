@@ -31,7 +31,7 @@ func main() {
 	}
 }
 
-func didHostnameMatched(urls []string, link string) bool {
+func didHostnameMatch(urls []string, link string) bool {
 	parsedCandidatedURL, _ := url.Parse(link)
 	for _, eachURL := range urls {
 		parsedURL, _ := url.Parse(eachURL)
