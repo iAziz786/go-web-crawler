@@ -18,7 +18,7 @@ func main() {
 	for ; n > 0; n-- {
 		list := <-worklist
 		for _, link := range list {
-			if didHostnameMatched(crawlableURLs, link) {
+			if didHostnameMatch(crawlableURLs, link) {
 				if !seen[link] {
 					seen[link] = true
 					n++
